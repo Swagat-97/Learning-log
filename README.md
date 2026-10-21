@@ -6,16 +6,25 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Progress
 
-| Skill | Status |
-|---|---|
-| Python | In progress |
-| Excel | Planned |
-| SQL | Planned |
-| Power BI | Planned |
+| Skill | Status | Started |
+|---|---|---|
+| Python | In progress | Oct 19, 2026 |
+| Excel | In progress | Oct 20, 2026 |
+| SQL | Planned | Oct 22, 2026 |
+| Power BI | Planned | Feb 2027 |
 
 ---
 
-## Day 1 (Oct 19 to 20): Python variables, types, operators
+## Daily Log
+
+### Day 2 (Oct 21): Python strings, Excel sales data
+
+- **Excel:** finished the sales data check. Learned how XLOOKUP works, pivot tables and other formulas.
+- **Python:** learned strings, some string methods, input(), and joining text.
+- Learned indexing and slicing.
+- Solved 3 practice problems on my own.
+
+### Day 1 (Oct 19 to 20): Python variables, types, operators
 
 - Learned what a variable is: a name that points to (references) a value.
 - Explored types (int, float, str) and input(), and how they work.
