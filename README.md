@@ -17,20 +17,19 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
-### Day 4 - Oct 23, 2026
-Python: even/odd/zero checker (zero tested first, 0 % 2 == 0 is True), leap year (400, then 100, then 4, strictest first). Tested 0, 7, 10, -3 and 1900, 2000, 2024, 2023.
-Excel: relative, absolute and mixed references, =$A2*B$1 grid, COUNT vs COUNTA, blank vs 0, COUNTIF, SUMIF vs SUMIFS argument order.
-Git: config, init, add, commit -m, status, log --oneline, branch -M main, remote add, push -u. Made 3 commits and pushed to github.com/Swagat-97/git-practice.
-Weak spots: $ placement, SUMIF vs SUMIFS order, git commit without -m.
-Recall: relative moves, $ locks what follows it; zero goes before even because 0 % 2 is 0; add stages, commit saves a snapshot.
+### Day 4 (Oct 23): Leap year, Excel references, first Git repo
+- **Python:** wrote the even/odd/zero checker (zero is tested first because 0 % 2 == 0) and the leap year checker (400, then 100, then 4). Tested 0, 7, 10, -3 and 1900, 2000, 2024, 2023.
+- **Excel:** learned relative, absolute and mixed references (=$A2*B$1), COUNT vs COUNTA, blank vs 0, COUNTIF, and SUMIF vs SUMIFS argument order.
+- **Git:** learned config, init, add, commit -m, status, log --oneline and push. Made 3 commits and pushed to github.com/Swagat-97/git-practice.
+- Weak spots: $ placement, SUMIF vs SUMIFS order, git commit without -m.
+- Recall: relative references move, $ locks what follows it; add stages, commit saves a snapshot.
 
-### Day 3 - Oct 22, 2026
-Python: if/elif/else, and/or/not, nesting, strictest condition first, ties need >=.
-SQL: CTE (one statement only, vs temp table), RANK/DENSE_RANK/ROW_NUMBER, PARTITION BY, LAG, running total, GROUP BY/HAVING. Practice: 3 problems, 1 right first try.
-Git: theory only (practical done Day 4).
-Open: SQL 5-question check on Colab data.
-Weak spots: colon plus indent, plain if vs elif, window function before FROM, commas, alias.
-Recall: conditions go strictest first; a CTE is lost after its statement; PARTITION BY keeps rows, GROUP BY collapses them.
+### Day 3 (Oct 22): Python conditions, CTEs, window functions
+- **Python:** learned if/elif/else, and/or/not, nested conditions, and putting the strictest condition first. Solved 3 practice problems.
+- **SQL:** learned CTEs (one statement only), RANK/DENSE_RANK/ROW_NUMBER, PARTITION BY, LAG, running totals, GROUP BY/HAVING. Did 3 practice problems, 1 right on the first try.
+- **Git:** theory only (repository, staging, commit).
+- Open: SQL 5-question check, moved to Oct 25.
+- Recall: a CTE is lost after its statement; PARTITION BY keeps the rows while GROUP BY collapses them.
 
 ### Day 2 (Oct 21): Python strings, Excel sales data
 
