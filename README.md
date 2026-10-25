@@ -17,6 +17,13 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 5 (Oct 24): Python loops, Excel GST, sort/filter, COUNTIFS and IF
+- **Python:** re-read and revised Conditions (leap year from a blank file). Learned for/range, while, break, continue, and the sum, count and max patterns. Solved Sum of 1 to N and the multiplication table.
+- **Excel:** GST with one absolute reference, price x rate grid (=$A2*B$1), sorting with headers, filter with COUNT vs SUBTOTAL, COUNTIFS, IF with AND/OR, IFERROR.
+- Weak spots: $ goes on the part that stays, continue skipping the update in a while loop, range stop value, AND/OR over whole ranges.
+- Open: SQL 5-question check (closes Day 3), moved to Oct 25 afternoon.
+- Recall: for/range stop is excluded, so use n + 1; COUNT counts hidden rows but SUBTOTAL does not; AND/OR need single cells.
+
 ### Day 4 (Oct 23): Leap year, Excel references, first Git repo
 - **Python:** wrote the even/odd/zero checker (zero is tested first because 0 % 2 == 0) and the leap year checker (400, then 100, then 4). Tested 0, 7, 10, -3 and 1900, 2000, 2024, 2023.
 - **Excel:** learned relative, absolute and mixed references (=$A2*B$1), COUNT vs COUNTA, blank vs 0, COUNTIF, and SUMIF vs SUMIFS argument order.
