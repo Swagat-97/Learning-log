@@ -17,11 +17,18 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 6 (Oct 25): Weekly test, business questions, how LLMs work
+- **Weekly test:** Python (FizzBuzz plus sum, type predictions), Excel (SUMIFS, COUNTIFS, IF with AND, price x rate grid) and Git (first commit and push). Python passed; COUNTIFS and the Git push step were repeated and cleared.
+- **Business:** turned "sales are falling" into which, where, since when and compared with what. Revenue = orders x items per order x average price per item. Wrote a 5-line investigation for "revenue dropped 10%".
+- **AI Fluency:** an LLM predicts the next token and can hallucinate; it does not calculate. LLM is the model, a chatbot is the product. Verified an AI answer in Colab: partly right.
+- Weak spots: COUNTIFS needs (range, "condition") pairs, git remote add origin, exact text with no extra spaces.
+- Open: AI Skill Hour, moved to Oct 27 afternoon.
+- Recall: COUNTIFS takes range and quoted condition; origin is only a nickname until you add it; always verify AI answers with a run or the docs.
+
 ### Day 5 (Oct 24): Python loops, Excel GST, sort/filter, COUNTIFS and IF
 - **Python:** re-read and revised Conditions (leap year from a blank file). Learned for/range, while, break, continue, and the sum, count and max patterns. Solved Sum of 1 to N and the multiplication table.
 - **Excel:** GST with one absolute reference, price x rate grid (=$A2*B$1), sorting with headers, filter with COUNT vs SUBTOTAL, COUNTIFS, IF with AND/OR, IFERROR.
 - Weak spots: $ goes on the part that stays, continue skipping the update in a while loop, range stop value, AND/OR over whole ranges.
-- Open: SQL 5-question check (closes Day 3), moved to Oct 25 afternoon.
 - Recall: for/range stop is excluded, so use n + 1; COUNT counts hidden rows but SUBTOTAL does not; AND/OR need single cells.
 
 ### Day 4 (Oct 23): Leap year, Excel references, first Git repo
@@ -35,7 +42,7 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 - **Python:** learned if/elif/else, and/or/not, nested conditions, and putting the strictest condition first. Solved 3 practice problems.
 - **SQL:** learned CTEs (one statement only), RANK/DENSE_RANK/ROW_NUMBER, PARTITION BY, LAG, running totals, GROUP BY/HAVING. Did 3 practice problems, 1 right on the first try.
 - **Git:** theory only (repository, staging, commit).
-- Open: SQL 5-question check, moved to Oct 25.
+- SQL check: solved all 5 (top customers, best product per category, repeat customers, month-over-month growth, running total) from a blank cell on Oct 26.
 - Recall: a CTE is lost after its statement; PARTITION BY keeps the rows while GROUP BY collapses them.
 
 ### Day 2 (Oct 21): Python strings, Excel sales data
