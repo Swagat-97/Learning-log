@@ -17,6 +17,13 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 7 (Oct 26): Lists, tuples and slicing, loops revision, git log
+- **Python:** Loops: range step is added to the index and stop is excluded; update before continue; multiples of both 3 and 5 use the LCM 15; max pattern starts from marks[0] and I must not name a variable max. Lists: index is an offset, negative index becomes n + index, slicing [start:stop:step] with direction decided by the step; append, insert, remove and sort return None, pop returns the item, sorted builds a new list. Tuples: immutable (TypeError), single-item needs a comma, a tuple holding a list can still change inside the list.
+- **Git:** git log shows committed history only; a commit ID identifies one exact commit.
+- **Weak spots:** step wording, naming the exact error, saying stop is excluded, pop() takes from the end, in-place methods return None.
+- **Open:** Retry the Day 7 practice. Commit with messages that say what changed, not "third commit".
+- **Recall:** (1) range(start, stop, step) adds the step to the index and excludes stop; in a while loop the update i += 1 must come BEFORE continue or the loop never ends; for "divisible by 3 and 5" use i%15==0 because 15 is the LCM (4 and 6 give 12, not 24); the max pattern starts from marks[0], and naming a variable max replaces the built-in so max([1, 2]) later raises TypeError. (2) A negative index becomes n + index, a slice is [start:stop:step] with stop excluded and direction decided only by the step; append, sort, remove and insert change the list in place and return None, pop returns the removed item, sorted() builds a new list; a tuple is immutable (TypeError on item assignment), a single-item tuple needs a trailing comma, and a tuple holding a list can still change inside that list. (3) git log shows only committed history (staged files show in git status), a commit ID identifies one exact commit snapshot, and three commits named "third commit" make the log useless, so write what changed.
+
 ### Day 6 (Oct 25): Weekly test, business questions, how LLMs work
 - **Weekly test:** Python (FizzBuzz plus sum, type predictions), Excel (SUMIFS, COUNTIFS, IF with AND, price x rate grid) and Git (first commit and push). Python passed; COUNTIFS and the Git push step were repeated and cleared.
 - **Business:** turned "sales are falling" into which, where, since when and compared with what. Revenue = orders x items per order x average price per item. Wrote a 5-line investigation for "revenue dropped 10%".
