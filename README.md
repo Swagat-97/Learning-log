@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 8 (Oct 27): Excel references, SUMIFS/COUNTIFS/IF/IFERROR practice, Git push steps
+- **Excel:** Recalled references: down changes only the row, across only the column, a diagonal drag does both; $ goes on the part that stays (=B2*$E$1). Offset rule: row 2 to row 4 is +2, so E1 becomes E3. SUMIFS per category with locked ranges and an unlocked criteria cell (totals 1620, 2170, 1830, cross-checked against 5620). COUNTIFS for West above 500 gave 3, at least 500 gave 5. IF with AND uses plain comparisons, ties need >=. IFERROR(...,0) hides real errors and the 0 counts in AVERAGE.
+- **Git:** add, commit, push in that order; git add needs a file name or dot; after add the file is staged, after commit it is in git log; status shows current files, log shows commits only.
+- **Weak spots:** counting the exact offset, > versus >= from the wording, AND syntax (comparisons, not range pairs), IFERROR risks, staged versus committed.
+- **Open:** Re-test the weak spots in the Oct 29 recall. Write commit messages that say what changed.
+- **Recall:** (1) Down changes the row and across changes the column; $ goes on the part that stays; a reference shifts by the exact distance moved, so E1 becomes E3 after +2 rows. (2) SUMIFS has the sum range first; COUNTIFS pairs work as AND and need equal-size ranges (19 vs 18 rows gives #VALUE!); read the wording for > versus >=; AND takes plain comparisons; IFERROR(...,0) hides errors and the 0 counts in AVERAGE. (3) Git: add, commit, push; add needs a path; after add the file is staged, after commit it shows in git log; status is current files, log is commit history only.
+
+
+
 ### Day 7 (Oct 26): Lists, tuples and slicing, loops revision, git log
 - **Python:** Loops: range step is added to the index and stop is excluded; update before continue; multiples of both 3 and 5 use the LCM 15; max pattern starts from marks[0] and I must not name a variable max. Lists: index is an offset, negative index becomes n + index, slicing [start:stop:step] with direction decided by the step; append, insert, remove and sort return None, pop returns the item, sorted builds a new list. Tuples: immutable (TypeError), single-item needs a comma, a tuple holding a list can still change inside the list.
 - **Git:** git log shows committed history only; a commit ID identifies one exact commit.
