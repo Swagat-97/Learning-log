@@ -17,6 +17,13 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 9 (Oct 28): Lists len and looping, average, second largest, recall of Oct 20-21, git remote revise
+- **Python:** len() counts list items and the last index is len - 1; looping by value (for m in marks) vs by index (for i in range(len(marks))); n = n * 10 inside a loop only repoints the name n, so the list is unchanged, and assigning nums[i] = ... is what changes items. Average = sum(marks) / len(marks) (a float; empty list gives ZeroDivisionError). Second largest: list(set(nums)) to drop duplicates, unique.sort() with brackets, guard len(unique) >= 2, then unique[-2].
+- **Git:** Practised init, branch -M main, add, commit, remote add origin, remote -v. origin is the nickname for the GitHub URL; main vs master is the separate branch name. The push was not retested today (proven earlier on git-practice).
+- **Weak spots:** missing () is a silent bug (unique.sort); blending two reasons (immutability vs str + int); naming the exact error; // rounds down; origin vs main.
+- **Open:** Retry the Day 9 practice. Retest git push from Colab with a token when needed.
+- **Recall:** (1) len(list) counts items (for a string it counts characters, so len(" ") is 1); for m in marks gives each value and for i in range(len(marks)) gives indexes 0 to len - 1; n = n * 10 only points the name n at a new number, so to change items I write nums[i] = nums[i] * 10. (2) Average is sum(marks) / len(marks) and returns a float; second largest is list(set(nums)), then unique.sort() WITH brackets (without them nothing sorts and no error shows), guarded by len(unique) >= 2, then unique[-2]. (3) "5" + 3 is a TypeError because + cannot mix str and int (not because of immutability), s[0] = "j" is a TypeError because strings are immutable, // rounds down (-7 // 2 = -4), and origin is only a nickname for the GitHub URL that has nothing to do with the branch name main.
+
 ### Day 8 (Oct 27): Excel references, SUMIFS/COUNTIFS/IF/IFERROR practice, Git push steps
 - **Excel:** Recalled references: down changes only the row, across only the column, a diagonal drag does both; $ goes on the part that stays (=B2*$E$1). Offset rule: row 2 to row 4 is +2, so E1 becomes E3. SUMIFS per category with locked ranges and an unlocked criteria cell (totals 1620, 2170, 1830, cross-checked against 5620). COUNTIFS for West above 500 gave 3, at least 500 gave 5. IF with AND uses plain comparisons, ties need >=. IFERROR(...,0) hides real errors and the 0 counts in AVERAGE.
 - **Git:** add, commit, push in that order; git add needs a file name or dot; after add the file is staged, after commit it is in git log; status shows current files, log shows commits only.
