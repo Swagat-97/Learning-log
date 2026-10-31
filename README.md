@@ -17,6 +17,14 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 11 (Oct 30): Conditions and lists/tuples recall, Git branch and merge practice
+- Python: if/elif/else runs only the first True branch; separate ifs are each checked; else pairs with the nearest if at the same indentation; a failed outer if skips the inner condition; "and" needs two full comparisons (SyntaxError otherwise), 30 <= marks < 40 also works; sort() returns None, sorted() returns a new list, pop() returns the removed item; (5) is int, (5,) is tuple; a tuple slot cannot be reassigned (TypeError) but a list inside can change (num[1].append(3)); slices clip, a single index gives IndexError; the step sign sets the direction
+- Excel: retest of IF/AND boundary rows (>= vs >) and missing $ (valid formula, wrong numbers, no error)
+- Git: branch, commit, switch, merge as fast-forward (no new commit on main) and as merge commit (both branches have new commits, 2 parents, "Merge made by the 'ort' strategy"); git log --oneline --graph --all; > overwrites, >> appends
+- Weak spots: reason not just output; exact names (None, TypeError, AttributeError, SyntaxError); "nested" and "loop" used correctly; tracing the exact line; a merge commit comes from diverged branches, not from typing a message; merge commit has 2 parents
+- Open: hardest-problem redo from a blank file not done; git push from Colab with a token not retested; $ rule needs one more retest
+- Recall: tuple slot fixed but inner list can change; fast-forward vs merge commit; missing $ gives silent wrong numbers
+
 ### Day 10 (Oct 29): Excel sales check recall, Status column, Git branches, merge, conflict, clone and pull
 - **Excel:** Recalled SUMIFS, COUNTIFS, XLOOKUP (separate lookup and return ranges, exact match by default), pivot source range (extend it or use an Excel Table, then Refresh) and #N/A checks (LEN, TRIM, SUBSTITUTE with CHAR(160)). Status column =IF(AND(B2>1000,C2>100),"High","Low") with boundary rows O2 and O3 staying Low; COUNTIFS pairs gave the same 3 rows; "at least" flips O2 and O3 (count 5). Revised $E$1 in a tax formula: without the $, D4 reads E3 (empty) and silently gives 600 instead of 708.
 - **Git:** A branch is a separate line of commits and main is one branch. git switch -c makes a branch; git branch shows names with * on the current one. A fast-forward merge only moves a label; merging diverged branches makes a merge commit with 2 parents. A conflict needs the same lines of the same file changed on both sides; I fix it by editing the file to delete the three markers, then git add, then git commit. git clone <URL> gives the files, the full history and origin; git fetch downloads without touching my files; git pull is fetch plus merge.
