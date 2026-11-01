@@ -17,6 +17,14 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 12 (Oct 31): Dicts and sets, INDEX+MATCH, XLOOKUP missing-ID message
+- Python: parallel lists break silently if one is reordered; list.index() gives the first match, ValueError if missing; a dict looks up by key (KeyError if the key is missing); get(key, default) stores nothing and returns the default; counting: counts[w] = counts.get(w, 0) + 1 (counts[w] += 1 gives KeyError on a new key); items() gives (key, value) tuples, unpacked in the loop; a plain loop over a dict gives keys; a set is unordered unique items, no indexing (TypeError), & | - give intersection, union, difference, and counts and order are lost; word count with split() and lower(); topper with > keeps the first on a tie, >= lets the last win; common elements with sorted(set(l1) & set(l2))
+- Excel: INDEX+MATCH: MATCH gives the position inside the range (not the sheet row), INDEX reads that position, =INDEX(B2:B5, MATCH("P103", A2:A5, 0)) returns 120; XLOOKUP 4th argument is if_not_found; a missing ID gives #N/A; IFERROR hides every error, IFNA only #N/A; recalls on $ and SUMIFS passed
+- Loops: recall passed (update line before continue, range stop excluded)
+- Weak spots: giving reason with the value; get() reads and stores nothing; keys are case-sensitive; position inside a range vs sheet row; a - b direction; fast-forward vs merge commit (diverged branches force a merge commit, not "different files")
+- Open: hardest-problem redo from a blank file (lists/tuples and dicts/sets); word counter handles only commas; push from Colab with a token not retested
+- Recall: get() and counting; sets are unique and unordered; INDEX+MATCH and XLOOKUP not-found
+
 ### Day 11 (Oct 30): Conditions and lists/tuples recall, Git branch and merge practice
 - Python: if/elif/else runs only the first True branch; separate ifs are each checked; else pairs with the nearest if at the same indentation; a failed outer if skips the inner condition; "and" needs two full comparisons (SyntaxError otherwise), 30 <= marks < 40 also works; sort() returns None, sorted() returns a new list, pop() returns the removed item; (5) is int, (5,) is tuple; a tuple slot cannot be reassigned (TypeError) but a list inside can change (num[1].append(3)); slices clip, a single index gives IndexError; the step sign sets the direction
 - Excel: retest of IF/AND boundary rows (>= vs >) and missing $ (valid formula, wrong numbers, no error)
