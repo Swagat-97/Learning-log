@@ -23,7 +23,9 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 - Loops: recall passed (update line before continue, range stop excluded)
 - Weak spots: giving reason with the value; get() reads and stores nothing; keys are case-sensitive; position inside a range vs sheet row; a - b direction; fast-forward vs merge commit (diverged branches force a merge commit, not "different files")
 - Open: hardest-problem redo from a blank file (lists/tuples and dicts/sets); word counter handles only commas; push from Colab with a token not retested
-- Recall: get() and counting; sets are unique and unordered; INDEX+MATCH and XLOOKUP not-found
+- Recall: 1. Python: get(key, default) returns the value if the key exists, else the default, and stores nothing, because a dict looks up by key. Counting: counts[w] = counts.get(w, 0) + 1, so ["I", "am", "I"] gives {'I': 2, 'am': 1}.
+2. Python: a set is an unordered collection of unique items, so s[0] raises TypeError: 'set' object is not subscriptable, because there is no position. & is intersection, | is union, - is difference.
+3. Excel: XLOOKUP returns the matching item from the return array, exact match by default, and its 4th argument shows a message instead of #N/A. INDEX+MATCH: =INDEX(B2:B5, MATCH("P103", A2:A5, 0)), because MATCH gives position 3 and INDEX reads 120.
 
 ### Day 11 (Oct 30): Conditions and lists/tuples recall, Git branch and merge practice
 - Python: if/elif/else runs only the first True branch; separate ifs are each checked; else pairs with the nearest if at the same indentation; a failed outer if skips the inner condition; "and" needs two full comparisons (SyntaxError otherwise), 30 <= marks < 40 also works; sort() returns None, sorted() returns a new list, pop() returns the removed item; (5) is int, (5,) is tuple; a tuple slot cannot be reassigned (TypeError) but a list inside can change (num[1].append(3)); slices clip, a single index gives IndexError; the step sign sets the direction
