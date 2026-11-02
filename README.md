@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 14 (Nov 2): Git and Excel retest, recalls, Python dict fix session
+- Git: retest of three cases: different files on both branches = merge commit (diverged), same line = conflict, no new commit on main = fast-forward; --ff-only refuses anything but a fast-forward, --no-ff forces a merge commit
+- Excel: IFNA vs IFERROR retest passed; IFERROR catches #N/A, #DIV/0!, #REF!, #VALUE!, #NAME?, #NUM!, #NULL!
+- Python: recalls on Lists and tuples and Dicts and sets, all six answers correct (append and sort return None, sorted() makes a new list, data[0][1] = 85 raises TypeError, get() default, KeyError, set removes duplicates, a - b, a & b)
+- Python fix: one engine for dict problems: the key, the first-time branch, the update (add 1, add the value, or compare and replace); three versions solved: best score from tuples, longest word per first letter (> keeps the first on a tie), count per size band (15 and above is large); found the bug `if v not in dict` (checked the score, so the elif never ran, and the elif kept the lower mark); never name a variable dict
+- Weak spots: output right by coincidence (test with reversed order); ties with > vs >=; boundary 15; exact Python error messages and the words raise vs print
+- Open: Python retake on Nov 3 afternoon; business topic, AI Fluency, AI skill hour; Functions lesson and is_prime moved to Nov 4; clone and conflict practice on Nov 3
+- Recall: fixed the merge types by cause (diverged, same line, no new commit on main); sort returns None, get() returns None or the default, a set drops duplicates; the dict bug was `v not in dict` checking the score.
+
 ### Day 13 (Nov 1): Weekly test (taken late, after midnight)
 - Python: Problem 1 (tuples inside a list, best score per student with a dict, plus slicing and tuple assignment) not solved after 25 minutes; Dicts and sets and Lists and tuples repeat; fix is to find the key, what happens when the key is missing, and the update line
 - Excel: INDEX+MATCH (=INDEX(B2:B5, MATCH("A103", A2:A5, 0)) gives Bag), XLOOKUP 4th argument if_not_found, plain MATCH on a missing ID gives #N/A; wrong reasoning on IFNA (wrapped around the whole formula it catches the MATCH error); IFERROR hides #REF!, #VALUE!, #NULL!, #NAME?, #DIV/0! as well
