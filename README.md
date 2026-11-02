@@ -17,6 +17,14 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 13 (Nov 1): Weekly test (taken late, after midnight)
+- Python: Problem 1 (tuples inside a list, best score per student with a dict, plus slicing and tuple assignment) not solved after 25 minutes; Dicts and sets and Lists and tuples repeat; fix is to find the key, what happens when the key is missing, and the update line
+- Excel: INDEX+MATCH (=INDEX(B2:B5, MATCH("A103", A2:A5, 0)) gives Bag), XLOOKUP 4th argument if_not_found, plain MATCH on a missing ID gives #N/A; wrong reasoning on IFNA (wrapped around the whole formula it catches the MATCH error); IFERROR hides #REF!, #VALUE!, #NULL!, #NAME?, #DIV/0! as well
+- Git: diverged merge with different files gave a merge commit (Merge made by the 'ort' strategy, 2 parents); clone and pull explained wrongly in the test
+- Weak spots: carrying a known pattern into a new problem shape; IFNA vs IFERROR reasoning; merge commit comes from diverged branches, not from different files; clone vs pull
+- Open: business topic, AI Fluency and AI skill hour moved to Nov 3 and Nov 4; Python retake on a new problem
+- Recall: stuck on a new dict shape, fix = key, missing key, update line; IFNA fixes only #N/A, IFERROR hides real mistakes; clone copies a repository with history, pull = fetch + merge.
+
 ### Day 12 (Oct 31): Dicts and sets, INDEX+MATCH, XLOOKUP missing-ID message
 - Python: parallel lists break silently if one is reordered; list.index() gives the first match, ValueError if missing; a dict looks up by key (KeyError if the key is missing); get(key, default) stores nothing and returns the default; counting: counts[w] = counts.get(w, 0) + 1 (counts[w] += 1 gives KeyError on a new key); items() gives (key, value) tuples, unpacked in the loop; a plain loop over a dict gives keys; a set is unordered unique items, no indexing (TypeError), & | - give intersection, union, difference, and counts and order are lost; word count with split() and lower(); topper with > keeps the first on a tie, >= lets the last win; common elements with sorted(set(l1) & set(l2))
 - Excel: INDEX+MATCH: MATCH gives the position inside the range (not the sheet row), INDEX reads that position, =INDEX(B2:B5, MATCH("P103", A2:A5, 0)) returns 120; XLOOKUP 4th argument is if_not_found; a missing ID gives #N/A; IFERROR hides every error, IFNA only #N/A; recalls on $ and SUMIFS passed
