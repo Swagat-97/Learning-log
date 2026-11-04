@@ -17,6 +17,21 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 15 (Nov 3, 2026): Pivot tables, Git revision, AI prompting, business metrics
+
+- Excel: Pivot table areas (Rows, Columns, Values, Filters). Sum to Average via Value Field Settings. Pivot chart follows its pivot. Top seller = Value Filters > Top 10 > Top 1 by Sum, not Max. Source range: Ctrl+T or PivotTable Analyze > Change Data Source, then Refresh.
+- Git: Parent counts (root 0, normal 1, merge 2). Fast-forward vs merge commit. clone vs init. Conflict markers, resolve with edit, add, commit, status.
+- AI Fluency: Clear instructions, few-shot (consistent Input/Output pairs), iteration. Fix the instruction first, then the examples. Reusable prompt library.
+- Business: Metric vs dimension, KPI, conversion rate, leading vs lagging.
+- Python: Retake of the pass-count dict (records of student, subject, mark). Passed with guidance. Fix: first-time step and update as two separate ifs.
+
+Weak spots: Parent counts (A and D wrong). Merge commit parents (B and D, not A). "Git cannot combine" instead of "cannot fast-forward" (wrong 5 times). Few-shot examples not Input/Output pairs. Max vs Top 1 by Sum. Forgot Refresh in recall.
+Open: Build the pivot practically (category x region, group dates by month). Clone to another folder and a conflict from a blank folder. Business practice feedback and the profit case. AI Fluency part C.
+Recall:
+- Pivot source range: the pivot reads only its selected range. Ctrl+T makes the source grow, or use Change Data Source. Refresh is still needed.
+- Git: root commit 0 parents, normal 1, merge commit 2. Fast-forward when main has no new commit since the branch was created. Merge commit when both branches have new commits.
+- Few-shot prompting: give a few Input/Output examples in the style you want so the AI copies the pattern.
+
 ### Day 14 (Nov 2): Git and Excel retest, recalls, Python dict fix session
 - Git: retest of three cases: different files on both branches = merge commit (diverged), same line = conflict, no new commit on main = fast-forward; --ff-only refuses anything but a fast-forward, --no-ff forces a merge commit
 - Excel: IFNA vs IFERROR retest passed; IFERROR catches #N/A, #DIV/0!, #REF!, #VALUE!, #NAME?, #NUM!, #NULL!
