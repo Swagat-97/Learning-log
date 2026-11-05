@@ -17,6 +17,16 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 17 (Nov 5, 2026): No study session, planning and Day 16 close
+
+- Planning: Reviewed the college timetable (classes 9:30-4:30, Saturday holiday) and planned Nov 6 to Nov 8 around it. Merged overlapping tasks: Functions lesson first, README/.gitignore as a first lesson, one AI skill hour (Sunday).
+- College: Finished a college task. Slept in the evening from tiredness.
+- Python / Excel / SQL / Git: No new topic. Nothing to revise.
+
+Weak spots: Evening lost; Day 16 recall and close done after midnight.
+Open: Pivot hands-on (monthly trend, top 5 customers), Functions lesson, README/.gitignore lesson, Git conflict redo, AI skill hour, profit-case retest. All moved into Nov 6 to Nov 8.
+Recall: None today, no study session.
+
 ### Day 16 (Nov 4, 2026): Business metrics practice and the profit case
 
 - Business: KPI parts (name, formula, period, target, owner). Leading vs lagging against a named outcome. Metric vs dimension, and fields that can be both. Vanity metrics vs AOV and repeat purchase rate. Profit case: orders up, profit down, split into volume effect (+Rs 20,000) and margin effect (-Rs 40,000) using profit per order and margin %.
