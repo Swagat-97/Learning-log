@@ -17,6 +17,17 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 16 (Nov 4, 2026): Business metrics practice and the profit case
+
+- Business: KPI parts (name, formula, period, target, owner). Leading vs lagging against a named outcome. Metric vs dimension, and fields that can be both. Vanity metrics vs AOV and repeat purchase rate. Profit case: orders up, profit down, split into volume effect (+Rs 20,000) and margin effect (-Rs 40,000) using profit per order and margin %.
+
+Weak spots: Wrong formulas in recall (profit = revenue - cost, margin = profit / revenue x 100). Discount named as a cause of higher cost per order. Recommendation repeated a check. Orders called leading and lagging without naming the outcome.
+Open: Profit-case retest (lines 4 and 5). Not done from the Nov 4 plan: Functions, is_prime, average(list), grade counts, AI skill hour, Git conflict redo.
+Recall:
+- Profit case: check profit per order and cost per order first. An unchanged AOV can still hide a fall in profit if cost per order rises.
+- Volume effect is extra orders x old profit per order. Margin is profit / revenue x 100, the share of revenue left as profit.
+- A metric can be summed, averaged or counted. A dimension is grouped by. A KPI is a goal-based, actionable, time-bound metric. Age can be both: average age is a metric, age bands are a dimension.
+
 ### Day 15 (Nov 3, 2026): Pivot tables, Git revision, AI prompting, business metrics
 
 - Excel: Pivot table areas (Rows, Columns, Values, Filters). Sum to Average via Value Field Settings. Pivot chart follows its pivot. Top seller = Value Filters > Top 10 > Top 1 by Sum, not Max. Source range: Ctrl+T or PivotTable Analyze > Change Data Source, then Refresh.
