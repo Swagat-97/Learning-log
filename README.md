@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 19 (Sat, 7 Nov 2026): Text vs real dates, and Python functions
+- Learned: real dates are numbers (3 Nov 2026 = 46329); text dates sort alphabetically; ISTEXT and ISNUMBER tell them apart; DATEVALUE converts text but depends on the regional day/month order.
+- Python functions: def, parameter vs argument, return vs print, no return gives None, return outside a function raises SyntaxError, code after return never runs.
+- Key idea: an empty-list average raises ZeroDivisionError; return None, not 0, and the caller checks is None. Defaults live in def; keyword arguments live in the call and match by name; positional first, then keyword.
+- Interview edge: SyntaxError stops the whole file before any line runs; mutable default argument trap (items=[]); ^ is XOR in Python, ** is power; use is None, not == None.
+- Weak spots: wrote ISDATE (does not exist); mixed up print and return; confused default, keyword and mixed calls; gave TypeError instead of SyntaxError for argument order; keyword arguments match by name, not order (corrected three times).
+- Open: finish Functions (is_prime, grade counts function); retest profit-case lines 4 and 5.
+- Recall: text vs real dates and the check formulas; return vs print vs no return; default vs keyword arguments.
+
 ### Day 18 (Fri, 6 Nov 2026): Pivot tables, monthly trend and top 5 customers
 - Learned: four pivot areas (Rows, Columns, Filters, Values); Values can do Sum, Count, Average, Max, Min; real dates group by month, text months sort alphabetically.
 - Built: monthly revenue pivot with a line chart using MonthSort (202608 etc.) and Month in Rows (Aug 120,500; Sep 96,500; Oct 81,500; Nov 35,500; total 334,000) and a top 5 customers pivot with a bar chart (Bina 89,500, Dev 62,500, Hari 54,000, Anil 41,000, Esha 32,000).
