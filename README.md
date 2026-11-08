@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 18 (Fri, 6 Nov 2026): Pivot tables, monthly trend and top 5 customers
+- Learned: four pivot areas (Rows, Columns, Filters, Values); Values can do Sum, Count, Average, Max, Min; real dates group by month, text months sort alphabetically.
+- Built: monthly revenue pivot with a line chart using MonthSort (202608 etc.) and Month in Rows (Aug 120,500; Sep 96,500; Oct 81,500; Nov 35,500; total 334,000) and a top 5 customers pivot with a bar chart (Bina 89,500, Dev 62,500, Hari 54,000, Anil 41,000, Esha 32,000).
+- Key idea: line chart for ordered time, bar chart for comparing categories. A numeric MonthSort key forces the right month order. Top 5 comes from Value Filters > Top 10 > Top 5 by Sum of Revenue.
+- Interview edge: after a Top N filter, the Grand Total shows only the visible rows (279,000 vs 334,000). Nov is a partial month (only Nov 1 and Nov 3), so it cannot be compared with full months.
+- Weak spots: reason for the line chart was circular; recall did not name the helper-field method I used; confused sorting with the Top N filter; missed Count/Average/Max/Min, filter scope, pivot chart, source range and Refresh in first recall.
+- Open: optional rebuild of the monthly chart by grouping Order Date directly; redo the hardest pivot problem from a blank sheet.
+- Recall: four areas; why a text month sorts wrongly and the fix; why the Grand Total is not company revenue after Top 5.
+
 ### Day 17 (Nov 5, 2026): No study session, planning and Day 16 close
 
 - Planning: Reviewed the college timetable (classes 9:30-4:30, Saturday holiday) and planned Nov 6 to Nov 8 around it. Merged overlapping tasks: Functions lesson first, README/.gitignore as a first lesson, one AI skill hour (Sunday).
