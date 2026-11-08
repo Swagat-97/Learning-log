@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 20 (Sun, 8 Nov 2026): Functions, is_prime, modulo and grade counts
+- Learned: % gives the remainder (12 = 2 x 5 + 2); n % 2 == 0 tests even; range stop is excluded; a prime is greater than 1 with no divisor from 2 to its square root.
+- Built: is_prime(n) with the n < 2 guard, range(2, int(n ** 0.5) + 1), return False inside the if and return True after the loop; six assert tests (-5, 1, 2, 4, 9, 97); grade_counts(marks) giving {'A': 3, 'C': 2, 'B': 1} for [85, 42, 67, 91, 30, 75].
+- Key idea: one number in every divisor pair is at most the square root, so test only up to int(n ** 0.5) + 1; range accepts only integers; the update in the dict counting engine runs for every item.
+- Interview edge: without + 1 the function is wrong for 4, 6, 8, 9, 15, 25, 35, 49 (below 100); without the guard 0 and 1 give True and negatives raise TypeError; dicts keep insertion order; in checks keys on a dict and values on a list.
+- Weak spots: single words instead of exact statements; print instead of return True; wrote in marks instead of in result; said update runs only for repeated grades; said an empty range gives False; mixed up which bug breaks 6 and 8; wrote =< instead of <=.
+- Open: split grade_counts into a grade_of helper; redo the first-time step and update on a new problem; retest the empty range and the bug-to-test mapping.
+- Recall: why stop at the square root and why + 1; what each return does; first-time step versus update.
+
 ### Day 19 (Sat, 7 Nov 2026): Text vs real dates, and Python functions
 - Learned: real dates are numbers (3 Nov 2026 = 46329); text dates sort alphabetically; ISTEXT and ISNUMBER tell them apart; DATEVALUE converts text but depends on the regional day/month order.
 - Python functions: def, parameter vs argument, return vs print, no return gives None, return outside a function raises SyntaxError, code after return never runs.
