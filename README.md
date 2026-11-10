@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 21 (Nov 9): Exceptions and try/except basics
+- Learned: unhandled error stops the program with a traceback; try/except ZeroDivisionError; except name must match the raised error; after the first error Python jumps to the matching except and skips the rest of the try; ValueError (int("abc"), int("12.5"), int("")) vs TypeError (int(None), 10 + "a"); except ValueError as e gives the message and e is deleted after the except block; bare except hides every bug
+- Built: safe_divide(a, b) with except ZeroDivisionError returning None (finished Nov 10 night)
+- Key idea: catch the narrowest error you can name; an error that reaches the traceback is a bug you can see
+- Interview edge: except Exception is almost a bare except; it makes safe_divide(10, "a") return None and hides the TypeError
+- Weak spots: used except Exception where the spec needed ZeroDivisionError only; answered for my old code instead of the version asked; skipped the first check when tracing an if/elif chain (<= 74 gap with 74.5)
+- Open: else clause, FileNotFoundError, modules, Practice 2 (valid number loop), Practice 3 (days left to Dec 31), README/.gitignore, grade_counts split into grade_of helper, safe_divide retest
+- Recall: unhandled error stops with a traceback and except must match; ValueError bad content vs TypeError wrong type; bare except hides bugs, catch the narrowest error
+
 ### Day 20 (Sun, 8 Nov 2026): Functions, is_prime, modulo and grade counts
 - Learned: % gives the remainder (12 = 2 x 5 + 2); n % 2 == 0 tests even; range stop is excluded; a prime is greater than 1 with no divisor from 2 to its square root.
 - Built: is_prime(n) with the n < 2 guard, range(2, int(n ** 0.5) + 1), return False inside the if and return True after the loop; six assert tests (-5, 1, 2, 4, 9, 97); grade_counts(marks) giving {'A': 3, 'C': 2, 'B': 1} for [85, 42, 67, 91, 30, 75].
