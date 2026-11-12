@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 22 (Nov 11): Narrow except, grade_counts helper, input loop, else clause
+- Learned: narrow except ZeroDivisionError means a TypeError is not caught and leaves the function; ZeroDivisionError also covers 10 / 0.0, 10 % 0 and 10 // 0; else runs only when the try finishes with no error and is skipped when except runs; an error raised inside else is not caught by the except above it; int(" 7 ") and int("-3") work, int("12.5") and int("") raise ValueError
+- Built: safe_divide retest (pass); grade_counts split into a grade_of helper (pass, boundary-tested); ask_number with while True, try/except ValueError, in two versions (return in try, return in else)
+- Key idea: keep the try block to the risky line; code that depends on it succeeding goes in else
+- Interview edge: dict counting has shorter forms (dict.get(key, 0) + 1, collections.Counter); an error inside else stays visible
+- Weak spots: said ValueError for safe_divide(10, "a") (it raises TypeError); described the first-time step as "if the dict is empty" instead of "if the grade is not a key"; did not write predictions before running (3 times); vague reasons like "cannot convert string to int"
+- Open: FileNotFoundError, modules (import, math, random, datetime), Practice 3 (days left to Dec 31), README/.gitignore, Files and CSV, retest of the TypeError vs ValueError naming
+- Recall: safe_divide with a narrow except raises TypeError for a string; grade_counts calls the helper per mark with a first-time step and an update; ask_number loops until int() succeeds, return ends it, else runs on success
+
 ### Day 21 (Nov 9): Exceptions and try/except basics
 - Learned: unhandled error stops the program with a traceback; try/except ZeroDivisionError; except name must match the raised error; after the first error Python jumps to the matching except and skips the rest of the try; ValueError (int("abc"), int("12.5"), int("")) vs TypeError (int(None), 10 + "a"); except ValueError as e gives the message and e is deleted after the except block; bare except hides every bug
 - Built: safe_divide(a, b) with except ZeroDivisionError returning None (finished Nov 10 night)
