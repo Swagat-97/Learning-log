@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 23 (Nov 12): Files, modules, chart, conditional formatting, validation
+- Learned: FileNotFoundError (child of OSError); with closes the file even when an error occurs, and the error continues; f.write adds no newline; modes r, w (erases on open) and a; readlines() returns a list with "\n" kept; strip() removes whitespace at both ends and split(",") cuts at commas; header row raises ValueError (int("marks")); next(f) discards the header; header-only file gives total 0 and an empty file raises StopIteration; math.sqrt always returns a float; round half to even; randint includes both ends; date minus date is a timedelta (.days is an int); Excel: sorted pivot column chart, Bottom 10% rule, data validation list from a range
+- Built: write 5 lines and read back with readlines (5); names-from-CSV loop; days-left-to-Dec-31 (49 on Nov 12)
+- Key idea: with and a typed range keep things in one place; read the exact function before answering, because randint is not range
+- Interview edge: date.today() in Colab is usually UTC; floor goes toward negative infinity; Bottom 10% is a rank rule, so 5 cells is too coarse
+- Weak spots: indentation errors (5, 6, 7 spaces); wrote randint endpoints as 4, 5; said ValueError for a TypeError case once; said StopIteration for a header-only file; no prediction before running (many times)
+- Open: Descriptive statistics, Text and date functions, Marks analyzer, Git conflict redo, README/.gitignore, Day 22 and Day 23 PDFs
+- Recall: w erases on open, a appends, next(f) discards the header; randint includes both ends, date minus date is timedelta; bar chart for unordered regions, Bottom 10% is by rank, range list lives in one place
+
 ### Day 22 (Nov 11): Narrow except, grade_counts helper, input loop, else clause
 - Learned: narrow except ZeroDivisionError means a TypeError is not caught and leaves the function; ZeroDivisionError also covers 10 / 0.0, 10 % 0 and 10 // 0; else runs only when the try finishes with no error and is skipped when except runs; an error raised inside else is not caught by the except above it; int(" 7 ") and int("-3") work, int("12.5") and int("") raise ValueError
 - Built: safe_divide retest (pass); grade_counts split into a grade_of helper (pass, boundary-tested); ask_number with while True, try/except ValueError, in two versions (return in try, return in else)
