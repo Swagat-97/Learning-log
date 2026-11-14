@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 25 (Nov 14): Marks analyzer finished, NumPy arrays, Text and date, Descriptive statistics
+- Learned: boolean mask a >= 40 returns an array of bool; sum() counts the True values and mean() * 100 gives the pass percentage; list + 5 raises TypeError but array + 5 adds to every element (vectorisation); dtype is fixed at creation, so d[0] = 90.7 on an int array stores 90 and stays int64; astype returns a new array; a slice is a view, so changing it changes the original, and .copy() avoids it; axis=0 returns one value per column, axis=1 one value per row. Excel: CONCAT vs TEXTJOIN with an empty cell, NETWORKDAYS counts both ends, DATE(year, month, day) builds a safe date. Statistics by hand on 8 numbers: mean 5, median 4.5, mode 4, range 7, variance 4, population std 2, sample std 2.138.
+- Built: Marks analyzer with a rows filter for blank lines, topper, lowest, pass count and pass percentage, and report.txt in w mode. Output on the 5-student file: Karan 92, Divya 38, 4 passed, 80.0 %.
+- Key idea: start from the first record, then loop over every record, so every counter includes the first one.
+- Interview edge: np.std defaults to population (ddof=0) but pandas std defaults to sample (ddof=1); a slice of an array is a view but a slice of a list is a copy; a stale report stays on disk when the program stops early.
+- Weak spots: no prediction written for the full output, and code pasted without a run; said float64 where it is int64; axis words reversed; Flash Fill is not an Excel equivalent of a formula; the trailing space in CONCAT comes from my own " " separator.
+- Open: stale-report fix code written but output not shown; ValueError guard for a bad mark; GitHub push proof not pasted; 4 Excel date test formulas not run; Tables, sorting, filtering, structured references; Git conflict redo.
+- Recall: start topper name and high mark from the first record and update both when a higher mark comes; report.txt in w mode. A boolean mask filters an array by a condition and the True positions are returned; a view shares memory and .copy() makes it independent. STDEV.P divides by n for a whole population; STDEV.S divides by n-1 for a sample.
+
 ### Day 24 (Nov 13): Recall + Marks analyzer average
 - Learned: TypeError vs ValueError (2/"a" raises TypeError, int("mark") raises ValueError); mode w truncates the file at the moment open() runs, not at close, and the file still exists, empty; mode a appends, and f.write adds no newline; header row int("Marks\n") raises ValueError; decimals need elif mark >= 50, not <= 74.
 - Built: Marks analyzer average from marks.csv, no pandas: with open, readlines, slice [1:] to skip the header, loop with strip() and split(","), int(), then total / count. Output on the 3-student file: 185, 3, 61.666666666666664.
