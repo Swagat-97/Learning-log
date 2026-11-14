@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 24 (Nov 13): Recall + Marks analyzer average
+- Learned: TypeError vs ValueError (2/"a" raises TypeError, int("mark") raises ValueError); mode w truncates the file at the moment open() runs, not at close, and the file still exists, empty; mode a appends, and f.write adds no newline; header row int("Marks\n") raises ValueError; decimals need elif mark >= 50, not <= 74.
+- Built: Marks analyzer average from marks.csv, no pandas: with open, readlines, slice [1:] to skip the header, loop with strip() and split(","), int(), then total / count. Output on the 3-student file: 185, 3, 61.666666666666664.
+- Key idea: skip the header first, then convert each row string to int before adding.
+- Interview edge: readlines() then next(f) raises StopIteration because the file is used up; split() without "," returns one item and [1] raises IndexError; an empty file raises nothing with readlines and [1:].
+- Weak spots: no prediction before running; said "deleted" instead of "truncated"; plan skipped the str to int step; returning 0 as the average of no data hides the problem.
+- Open: blank-line guard; topper, lowest, pass percentage, report.txt; GitHub push; Descriptive statistics; Git conflict redo.
+- Recall: TypeError = wrong type for the operation; ValueError = right type, bad content. w truncates on open(), a appends and write adds no newline. Marks analyzer: with open, readlines, [1:], strip/split/int, total / count.
+
 ### Day 23 (Nov 12): Files, modules, chart, conditional formatting, validation
 - Learned: FileNotFoundError (child of OSError); with closes the file even when an error occurs, and the error continues; f.write adds no newline; modes r, w (erases on open) and a; readlines() returns a list with "\n" kept; strip() removes whitespace at both ends and split(",") cuts at commas; header row raises ValueError (int("marks")); next(f) discards the header; header-only file gives total 0 and an empty file raises StopIteration; math.sqrt always returns a float; round half to even; randint includes both ends; date minus date is a timedelta (.days is an int); Excel: sorted pivot column chart, Bottom 10% rule, data validation list from a range
 - Built: write 5 lines and read back with readlines (5); names-from-CSV loop; days-left-to-Dec-31 (49 on Nov 12)
