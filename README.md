@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 26 (Sun Nov 15): Weekly test, Excel Tables, Conversion, retention and churn
+- Learned: Tables grow when you type under them; structured references (Sales[Amount], [@Qty]); SUM counts filtered rows but SUBTOTAL(109) ignores them; sorting one column of a plain range breaks rows. Conversion rate = orders / visitors x 100 (name the denominator); churn = lost / customers at the start; retention = 100 - churn; cohorts and retention tables (blank cell = not happened yet); AOV = revenue / orders; revenue = orders x AOV.
+- Built: weekly test passed (3 problems); two 5-line business cases (AOV fall, conversion drop); local Git commit 2d713bb with the real analyzer (59 lines), marks.csv and report.txt.
+- Key idea: the denominator is the group at risk at the start; in a business case, confirm the data first, then segment.
+- Interview edge: ISNUMBER of an error returns FALSE; cohorts stop new and old customers mixing; a 403 means authenticated but not allowed; early churn is the biggest lever.
+- Weak spots: brackets in a written formula; unguarded empty and header-only files; pasted placeholder text as git output; a space in the GitHub username broke the URL; business-case line 1 jumped to a cause.
+- Open: git push (403, token needs write access); Day 26 line 3 retest; AI Fluency and the AI skill hour (Monday bus); guard for a bad mark and a row without a comma; Git conflict redo.
+- Recall: Tables expand when you type under them and structured references follow the Table. Churn divides customers lost by customers at the start; a cohort table follows each signup group over time. Business case order: confirm data, segment, find what changed, quantify profit, recommend a test with a guardrail.
+
 ### Day 25 (Nov 14): Marks analyzer finished, NumPy arrays, Text and date, Descriptive statistics
 - Learned: boolean mask a >= 40 returns an array of bool; sum() counts the True values and mean() * 100 gives the pass percentage; list + 5 raises TypeError but array + 5 adds to every element (vectorisation); dtype is fixed at creation, so d[0] = 90.7 on an int array stores 90 and stays int64; astype returns a new array; a slice is a view, so changing it changes the original, and .copy() avoids it; axis=0 returns one value per column, axis=1 one value per row. Excel: CONCAT vs TEXTJOIN with an empty cell, NETWORKDAYS counts both ends, DATE(year, month, day) builds a safe date. Statistics by hand on 8 numbers: mean 5, median 4.5, mode 4, range 7, variance 4, population std 2, sample std 2.138.
 - Built: Marks analyzer with a rows filter for blank lines, topper, lowest, pass count and pass percentage, and report.txt in w mode. Output on the 5-student file: Karan 92, Divya 38, 4 passed, 80.0 %.
