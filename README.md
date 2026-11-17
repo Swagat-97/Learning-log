@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 27 (Mon Nov 16 2026): NumPy zeros, arange, linspace, masks
+- Learned: np.zeros takes a shape tuple first and dtype second (np.zeros(2, 3) raises TypeError). arange excludes stop; linspace takes a count and includes stop. A boolean mask filters with x[mask]; sum() counts True and mean() gives the proportion. x / 2 returns float64.
+- Built: nothing new, concept practice only.
+- Key idea: a condition on an array returns True/False for every element at once, and True counts as 1 and False as 0.
+- Interview edge: np.arange(1, 11).dtype is int64 on Linux/Colab, but older NumPy on Windows gave int32. Name the platform when dtype matters.
+- Weak spots: wrote the mask for x % 2 == 0 at the wrong positions; missing brackets in (4*1 + 6*0) / 10; did not label Prediction; mixed up element-wise and broadcasting.
+- Open: git push returned 403 (token needs write access); Tuesday Tools block and Descriptive statistics practice still due.
+- Recall: zeros takes a shape tuple first; arange vs linspace (step vs count, stop excluded vs included); mask sum counts, mean is a proportion.
+
 ### Day 26 (Sun Nov 15): Weekly test, Excel Tables, Conversion, retention and churn
 - Learned: Tables grow when you type under them; structured references (Sales[Amount], [@Qty]); SUM counts filtered rows but SUBTOTAL(109) ignores them; sorting one column of a plain range breaks rows. Conversion rate = orders / visitors x 100 (name the denominator); churn = lost / customers at the start; retention = 100 - churn; cohorts and retention tables (blank cell = not happened yet); AOV = revenue / orders; revenue = orders x AOV.
 - Built: weekly test passed (3 problems); two 5-line business cases (AOV fall, conversion drop); local Git commit 2d713bb with the real analyzer (59 lines), marks.csv and report.txt.
