@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 30 (Thu Nov 19 2026): NumPy indexing and slicing, view vs copy
+- Learned: index from 0 and negative index; slice a[start:stop:step] with stop excluded; [::2] and [::-1]; 2D m[row, col] and m[:, 1] vs m[:, 1:2]; a basic slice is a view, a mask or index list is a copy.
+- Built: nothing new, concept practice in Colab (3 problems solved alone, real outputs pasted).
+- Key idea: before the comma picks rows, after the comma picks columns, and a basic slice shares memory with the original.
+- Interview edge: a single index returns a scalar but a slice returns an array; a mask and a list of indices both return copies.
+- Weak spots: wrote a[1] as [20.]; no reasons on the first try; dropped 80 from marks[marks > 50]; pasted predictions without real outputs; recall left out int() after DictReader.
+- Open: Tools block (Tables practice, Charts and Text/date recalls), Data cleaning, Percentiles/IQR/skewness not done; ValueError guard for a bad mark; git push 403.
+- Recall: [::2] takes every second element and [::-1] reverses; slice = view, mask = copy; m[:, 1] is flat and m[:, 1:2] keeps the column.
+
 ### Day 29 (Wed Nov 18 2026): Rest day after the college function
 - Learned: none (rest day, skipped because of the college function and tiredness).
 - Built: none.
