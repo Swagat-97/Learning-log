@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 29 (Wed Nov 18 2026): Rest day after the college function
+- Learned: none (rest day, skipped because of the college function and tiredness).
+- Built: none.
+- Key idea: none.
+- Interview edge: none.
+- Weak spots: none recorded.
+- Open: the Wed Python block (Arrays re-read and redo, Indexing and slicing, two recalls) and the Descriptive statistics hardest-problem redo carried to Day 30.
+- Recall: none.
+
 ### Day 28 (Tue Nov 17 2026): Descriptive statistics, mean vs median
 - Learned: mean = total / count; median = middle value after sorting; an outlier pulls the mean but not the median. Report the median for a typical order and use the mean to plan total revenue.
 - Built: nothing new, concept practice only.
