@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 28 (Tue Nov 17 2026): Descriptive statistics, mean vs median
+- Learned: mean = total / count; median = middle value after sorting; an outlier pulls the mean but not the median. Report the median for a typical order and use the mean to plan total revenue.
+- Built: nothing new, concept practice only.
+- Key idea: total = mean x count, so the mean is the right average for totals.
+- Interview edge: a mean far above the median means right skew (long tail on the right). Check an outlier is real before dropping it, and label small-sample estimates as rough.
+- Weak spots: no Prediction label; vague phrases like "extreme values"; recall line 3 gave no reason.
+- Open: Tue Tools block (Tables practice, Charts and Text/date recalls) not done; git push returned 403.
+- Recall: outlier moves the mean more than the median; total revenue = mean x count; 5-order estimates are rough.
+
 ### Day 27 (Mon Nov 16 2026): NumPy zeros, arange, linspace, masks
 - Learned: np.zeros takes a shape tuple first and dtype second (np.zeros(2, 3) raises TypeError). arange excludes stop; linspace takes a count and includes stop. A boolean mask filters with x[mask]; sum() counts True and mean() gives the proportion. x / 2 returns float64.
 - Built: nothing new, concept practice only.
