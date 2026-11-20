@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 31 (Fri Nov 20 2026): Percentiles, IQR, skewness and Excel Tables
+- Learned: quartiles (QUARTILE.INC vs EXC), IQR = Q3 - Q1, the 1.5 x IQR outlier rule, skewness sign and the mean vs median shortcut; Table calculated column with [@Revenue]; SUM vs SUBTOTAL(109) with a filter on; the Total Row.
+- Built: Excel Tables practice (tblOrders with a calculated tax column and a discount column, filter, Total Row, SUBTOTAL outside the table), with real screenshots.
+- Key idea: IQR and the median ignore how far an outlier sits; SUBTOTAL(109) follows the filter and SUM does not.
+- Interview edge: there is no single quartile method, so always name it; the 1.5 x IQR rule flags outliers, it never deletes them.
+- Weak spots: median-of-halves quartiles gave IQR 210 and an unsupported conclusion; said "After verification" without pasting values; hardcoded 18% in a formula; said "Arithmetic SUM" for the Total Row; recall skipped the quartile method.
+- Open: Data cleaning (not learned yet), Branches/clone/pull and Descriptive statistics recalls, Charts and Text/date recalls, ValueError guard for a bad mark, row-without-comma and FileNotFoundError guards.
+- Recall: IQR and the fences flag outliers; SUM counts all rows and SUBTOTAL(109) counts visible rows; [@Revenue] means this row.
+
 ### Day 30 (Thu Nov 19 2026): NumPy indexing and slicing, view vs copy
 - Learned: index from 0 and negative index; slice a[start:stop:step] with stop excluded; [::2] and [::-1]; 2D m[row, col] and m[:, 1] vs m[:, 1:2]; a basic slice is a view, a mask or index list is a copy.
 - Built: nothing new, concept practice in Colab (3 problems solved alone, real outputs pasted).
