@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 32 (Sat Nov 21 2026): Aggregation, Data cleaning, KPI reporting
+- Learned: sum, mean, max, std with axis=0 (one value per column) and axis=1 (one value per row); std ddof=0 vs 1; broadcasting g - g.mean(axis=0) and keepdims=True for rows. Data cleaning: TRIM, PROPER, SUBSTITUTE, CODE, EXACT, the invisible CHAR(160) space, filling blanks. KPI reporting: AOV, MoM growth, SUMIFS, growth contribution by region.
+- Built: 4x5 row and column averages (real Colab output), a blank-fill and cleaning log, a MoM KPI check (predictions only).
+- Key idea: revenue growth = orders growth x AOV growth; TRIM removes only code 32, so a length check cannot see a non-breaking space.
+- Interview edge: SUBSTITUTE(A2,CHAR(160)," ") fixes web-copied text; a total can rise while one region falls.
+- Weak spots: no Prediction label on two answers; pasted wrong-position output once and did not paste real Excel values; wrote =A1 instead of =A2 for Go To Special blanks; said the order of TRIM and PROPER matters, then said it gives the same result.
+- Open: Data cleaning hardest-problem redo, KPI real Excel run, Dicts/sets and XLOOKUP/INDEX+MATCH recalls, Branches/clone/pull and Descriptive statistics recalls, ValueError guard for a bad mark.
+- Recall: axis=0 one value per column and axis=1 one value per row; TRIM does not remove CHAR(160), SUBSTITUTE does; revenue growth beats order growth when AOV rises, so check segments first.
+
 ### Day 31 (Fri Nov 20 2026): Percentiles, IQR, skewness and Excel Tables
 - Learned: quartiles (QUARTILE.INC vs EXC), IQR = Q3 - Q1, the 1.5 x IQR outlier rule, skewness sign and the mean vs median shortcut; Table calculated column with [@Revenue]; SUM vs SUBTOTAL(109) with a filter on; the Total Row.
 - Built: Excel Tables practice (tblOrders with a calculated tax column and a discount column, filter, Total Row, SUBTOTAL outside the table), with real screenshots.
