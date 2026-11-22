@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 33 (Sun Nov 22, 2026): Weekly test, cleaning redo, KPI, business metrics
+- Learned: TRIM only handles ASCII 32; fix order TRIM(SUBSTITUTE(A1,CHAR(160)," ")); growth is multiplicative; CAC, ROAS, ROI and break-even ROAS = 1 / gross margin.
+- Built: Weekly test (3 problems, about 30 of 45 min): slicing and aggregation pass, percentiles pass, cleaning pass (Excel verified: 14, 10, 32, TRUE, 160).
+- Key idea: revenue growth = (1 + orders growth) x (1 + AOV growth) - 1. ROAS above 1 can still lose money if ROAS < 1 / margin.
+- Interview edge: removing the outlier 60 flips the skew sign (mean 11.2 below median 12). Report median and IQR as the robust summary. CLEAN and TRIM both skip CHAR(160); only SUBSTITUTE removes it.
+- Weak spots: Prediction label missed, wrote 12 but counted 11, no proof that A1 is dirty, reasons restated numbers, said "broadcasting error" not ValueError, ROI x100, fifth Prediction posted together with the screenshot.
+- Open: KPI Table 2 (SUMIFS, MoM, contribution); Table 1 Excel run; AI Fluency and AI skill hour moved to Mon Nov 23; recalls from Oct 29 to Nov 12.
+- Recall: TRIM skips CHAR(160), SUBSTITUTE first. axis=1 gives one mean per row, keepdims fixes the ValueError. Break-even ROAS = 1 / margin.
+
 ### Day 32 (Sat Nov 21 2026): Aggregation, Data cleaning, KPI reporting
 - Learned: sum, mean, max, std with axis=0 (one value per column) and axis=1 (one value per row); std ddof=0 vs 1; broadcasting g - g.mean(axis=0) and keepdims=True for rows. Data cleaning: TRIM, PROPER, SUBSTITUTE, CODE, EXACT, the invisible CHAR(160) space, filling blanks. KPI reporting: AOV, MoM growth, SUMIFS, growth contribution by region.
 - Built: 4x5 row and column averages (real Colab output), a blank-fill and cleaning log, a MoM KPI check (predictions only).
