@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 34 (Mon Nov 23, 2026): KPI Table 2, argmax, functions, LTV and channel metrics
+- Learned: contribution to growth (adds up to total growth); break-even ROAS = 1 / margin; LTV, LTV:CAC and payback; argmax vs np.where; print vs return.
+- Built: KPI Table 2 in Excel (SUMIFS, growth %, contribution, verified); normalize and argmax practice and the keepdims redo in Colab; AI skill hour (Gemini in Colab, code reviewed line by line); AI Fluency (Gemini vs Grok on std); recalls on Functions, Aggregation, XLOOKUP/INDEX+MATCH and Tables.
+- Key idea: with the same order value, CAC up 25% means ROAS falls to 3.0 / 1.25 = 2.4. Compare CAC with gross profit per customer, not CAC alone.
+- Interview edge: argmax returns the first tie only (np.where gives all). Default values are created once at def time.
+- Weak spots: Prediction label missed; I12 predicted 125% (mixed denominators); invented std digits; int minus float gives float; skipped G3 and G4 cells without saying; code not pasted; business case step 1 and 5.
+- Open: Table 1 Excel run; Table 2 formulas still have typed constants; carried recalls (Dicts and sets, Branches/clone/pull, Descriptive statistics, Charts/CF/validation, Text and date functions); Python guards; Git conflict redo.
+- Recall: LTV:CAC and payback in months; argmax first among ties, np.where for all; function with only print returns None.
+
 ### Day 33 (Sun Nov 22, 2026): Weekly test, cleaning redo, KPI, business metrics
 - Learned: TRIM only handles ASCII 32; fix order TRIM(SUBSTITUTE(A1,CHAR(160)," ")); growth is multiplicative; CAC, ROAS, ROI and break-even ROAS = 1 / gross margin.
 - Built: Weekly test (3 problems, about 30 of 45 min): slicing and aggregation pass, percentiles pass, cleaning pass (Excel verified: 14, 10, 32, TRUE, 160).
