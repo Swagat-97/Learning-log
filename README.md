@@ -17,6 +17,15 @@ Daily log of my data analytics journey. Started Oct 19, 2026.
 
 ## Daily Log
 
+### Day 35 (Tue Nov 24, 2026): KPI practice, pivot recall, percentiles practice, dicts and sets
+- Learned: AOV by category and monthly MoM with SUMIFS and COUNTIFS; pivot Values area (Sum or Count); QUARTILE.INC vs EXC; skew of a revenue column; dicts and sets.
+- Built: Table 1 KPI (verified in Excel); AOV by category and monthly revenue with MoM (verified, cell references used); percentile, IQR, fences and SKEW on 16 orders (verified, B26 formula seen); recalls on Pivot tables and Dicts/sets.
+- Key idea: orders -16.67% and AOV +24.90% gave revenue only +4.08% (multiplicative). A rising AOV can hide falling orders.
+- Interview edge: INC Q1 775 and Q3 2625 vs EXC Q1 725 and Q3 2875 moves the upper fence from 5400 to 6100, so name the method. A pivot with a blank or text in the column defaults to Count.
+- Weak spots: SKEW value given to four digits without saying whether run; only some formulas shown in screenshots; no check cell for Table 1; set and dict recall missing KeyError and unordered-set points.
+- Open: Python guards (ValueError for "abc", row without comma, FileNotFoundError); Git conflict redo; carried recalls (Branches/clone/pull, Descriptive statistics, Charts/CF/validation, Text and date functions); re-reads of KPI and Percentiles skipped; Data cleaning recall skipped.
+- Recall: pivot Values default flips to Count on text or blanks; INC vs EXC changes Q1, Q3 and the fences, so name it; fewer orders with a higher AOV gave only +4.08% revenue.
+
 ### Day 34 (Mon Nov 23, 2026): KPI Table 2, argmax, functions, LTV and channel metrics
 - Learned: contribution to growth (adds up to total growth); break-even ROAS = 1 / margin; LTV, LTV:CAC and payback; argmax vs np.where; print vs return.
 - Built: KPI Table 2 in Excel (SUMIFS, growth %, contribution, verified); normalize and argmax practice and the keepdims redo in Colab; AI skill hour (Gemini in Colab, code reviewed line by line); AI Fluency (Gemini vs Grok on std); recalls on Functions, Aggregation, XLOOKUP/INDEX+MATCH and Tables.
